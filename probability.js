@@ -2,7 +2,7 @@ export class Probability{
     constructor(number, outOf) {
         this.value = number/outOf
         this.number = number
-        this.out_of = outOf
+        this.outOf = outOf
     }
 
     equals(other){
@@ -11,6 +11,6 @@ export class Probability{
     }
 
     combineWith(other){
-        return new Probability(this.number * other.number, this.out_of * other.out_of);
+        return new Probability(this.number * other.number, this.outOf * other.outOf);
     }
 }
