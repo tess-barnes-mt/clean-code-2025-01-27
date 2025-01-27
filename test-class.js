@@ -1,7 +1,5 @@
-class TestClass{
+export class TestClass{
     aMethod(){
         return true;
     }
 }
-
-module.exports = {TestClass}

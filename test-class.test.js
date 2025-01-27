@@ -1,4 +1,4 @@
-const {TestClass} = require("./test-class")
+import {TestClass} from "./test-class";
 
 describe('TestClass...', () => {
     test('', () => {
