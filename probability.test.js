@@ -16,8 +16,6 @@ describe('Test Probabilities combined', () => {
     test('Probabilities combined are order agnostic', () => {
         const probabilityA = new Probability(1,3)
         const probabilityB = new Probability(1,2)
-        const combination1 = probabilityA.combineWith(probabilityB)
-        const combination2 = probabilityB.combineWith(probabilityA)
-        expect(combination1.equals(combination2)).toBe(true);
+        expect(probabilityA.combineWith(probabilityB).equals(probabilityB.combineWith(probabilityA))).toBe(true);
     })
 })
