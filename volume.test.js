@@ -10,4 +10,9 @@ describe('Volume', () => {
     const TwoOunces = new Volume(2,OUNCE);
     expect(FourTablespoons.equals(TwoOunces)).toBe(true);
   });
+  test('adding teaspoons can make a tablespoon', () => {
+    const TwoTeaspoons = new Volume(2, TEASPOON);
+    const OneTeaspoons = new Volume(1, TEASPOON);
+    expect(TwoTeaspoons.add(OneTeaspoons).equals(new Volume(1, TABLESPOON))).toBe(true)
+  });
 });
